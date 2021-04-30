@@ -54,9 +54,9 @@ export const createInitialMessage = ({
 const createDoneMessage = () => ({action: 'stop'});
 
 const toIBM = function toIBM({
+  instanceId,
+  secretAccessKey,
   region = (process.env.IBM_REGION || 'us-east'),
-  secretAccessKey = process.env.IBM_SECRET_ACCESS_KEY,
-  instanceId = process.env.IBM_STT_INSTANCE_ID,
   optOutLearning = true,
   model = 'en-US_Multimedia',
   acousticCustomizationId = null,
