@@ -1,16 +1,16 @@
 {
-  "name": "@buccaneerai/PACKAGE_NAME",
+  "name": "@buccaneerai/stt-ibm",
   "version": "1.0.0",
-  "description": "DESCRIPTION",
+  "description": "👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the IBM Watson.",
   "main": "dist/index.js",
-  "repository": "https://github.com/buccaneerai/PACKAGE_NAME.git",
+  "repository": "https://github.com/buccaneerai/stt-ibm.git",
   "author": "Buccaneer LLC <opensource@buccaneer.ai>",
   "license": "UNLICENSED",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/buccaneerai/PACKAGE_NAME/issues"
+    "url": "https://github.com/buccaneerai/stt-ibm/issues"
   },
   "keywords": [],
   "directories": {
@@ -24,6 +24,7 @@
     "test": "mocha --require @babel/register --require @babel/polyfill \"./{,!(node_modules)/**/}*.test.js\" --exit --require source-map-support"
   },
   "dependencies": {
+    "@bottlenose/rxws": "^0.7.0",
     "lodash": "^4.17.20",
     "rxjs": "^6.6.3"
   },
@@ -34,6 +35,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.13",
     "@babel/register": "^7.12.13",
+    "@bottlenose/rxfs": "^0.7.0",
     "chai": "^4.2.0",
     "commander": "^7.0.0",
     "mocha": "^8.2.1",

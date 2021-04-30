@@ -896,6 +896,24 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bottlenose/rxfs@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@bottlenose/rxfs/-/rxfs-0.7.0.tgz#576328cce834714c5f8045cf895f6d17b52bb967"
+  integrity sha512-MXcMuX1Fht4o7TAK99N8lrNhKIxteZZtIzxZ+FAvw/TLTRT++MBw/qVqzWFYY+/nh1oCL1tZKDnYDov3cWfF8Q==
+  dependencies:
+    lodash "^4.17.15"
+    rxjs "^6.5.4"
+
+"@bottlenose/rxws@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@bottlenose/rxws/-/rxws-0.7.0.tgz#a57dfbf21e854fc85fd81e5be46cf144177cb1d2"
+  integrity sha512-PD8oToT8sdTnNb0hEEgbxFLtBjjnLqTvzYYk+roev6nDuZ6Y+djfeSaXikQuQseMIL3OrFgG7cVg6aVW20pLzA==
+  dependencies:
+    isomorphic-ws "^4.0.1"
+    lodash "^4.17.15"
+    rxjs "^6.5.4"
+    ws "^7.2.1"
+
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents":
   version "2.1.8-no-fsevents"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.tgz#da7c3996b8e6e19ebd14d82eaced2313e7769f9b"
@@ -1974,6 +1992,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+isomorphic-ws@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz#55fd4cd6c5e6491e76dc125938dd863f5cd4f2dc"
+  integrity sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -2057,6 +2080,11 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash@^4.17.15:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 lodash@^4.17.19, lodash@^4.17.20:
   version "4.17.20"
@@ -2557,6 +2585,13 @@ rxjs-report-usage@^1.0.4:
     glob "~7.1.6"
     prompts "~2.3.2"
 
+rxjs@^6.5.4:
+  version "6.6.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
+  integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
+  dependencies:
+    tslib "^1.9.0"
+
 rxjs@^6.6.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
@@ -2944,6 +2979,11 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+ws@^7.2.1:
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.5.tgz#a484dd851e9beb6fdb420027e3885e8ce48986c1"
+  integrity sha512-xzyu3hFvomRfXKH8vOFMU3OguG6oOvhXMo3xsGy3xWExqaM2dxBbVxuD99O7m3ZUFMvvscsZDqxfgMaRr/Nr1g==
 
 y18n@^4.0.0:
   version "4.0.1"
