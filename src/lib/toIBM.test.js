@@ -29,6 +29,7 @@ describe('toIBM', () => {
   it('.createInitialMessage should generate correct startup message', () => {
     const params = {
       contentType: 'audio/l16',
+      sampleRate: 16000,
       interimResults: true,
       inactivityTimeout: 60,
       maxAlternatives: 3,
@@ -37,16 +38,16 @@ describe('toIBM', () => {
       useWordConfidence: true,
     };
     const actual = createInitialMessage(params);
-    const expected = {
+    const expected = JSON.stringify({
       action: 'start',
-      'content-type': 'audio/l16',
+      'content-type': 'audio/l16;rate=16000',
       'interim_results': true,
       'inactivity_timeout': 60,
       'max_alternatives': 3,
       'smart_formatting': true,
       'speaker_labels': true,
       'word_confidence': true,
-    };
+    });
     expect(actual).to.deep.equal(expected);
   });
 });
