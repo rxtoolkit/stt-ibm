@@ -13,7 +13,7 @@ describe('toIBM', () => {
     const params = {
       region: 'us-east',
       instanceId: 'abcdefg',
-      secretAccessKey: 'secret',
+      token: 'secret',
       model: 'en-US_Multimedia',
     };
     const actual = getUrl(params);
