@@ -8,6 +8,12 @@ This is a private package. It requires setting up access in your npm config.
 yarn add @buccaneerai/stt-ibm
 ```
 
+## Demo
+To run the demo pipeline:
+```bash
+yarn demo:run <myInstanceId> --secret <secretAccessKey> --write-output
+```
+
 ## API
 
 ### `toIBM`
