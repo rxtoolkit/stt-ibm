@@ -105,6 +105,7 @@ const toIBM = function toIBM({
   useSpeakerLabels = true,
   useWordConfidence = true,
   chunkSize = 512,
+  _conduitOptions = {},
   _conduit = conduit,
   _shortenChunks = shortenChunks,
   _getUrl = getUrl,
@@ -154,7 +155,12 @@ const toIBM = function toIBM({
         return websocketMessage$.pipe(
           // Keep chunks reasonably small
           // stream chunks to IBM websocket server and receive responses
-          _conduit({url, serializer: _serializer, deserializer: _deserializer}),
+          _conduit({
+            url,
+            serializer: _serializer,
+            deserializer: _deserializer,
+            ...conduitOptions
+          }),
         );
       }),
       takeUntil(stop$)
