@@ -25,7 +25,7 @@
     "demo:run": "node ./scripts/demo.js run"
   },
   "dependencies": {
-    "@bottlenose/rxws": "^0.7.0",
+    "@buccaneerai/rxjs-ws": "^1.0.0",
     "axios": "^0.21.1",
     "lodash": "^4.17.20",
     "qs": "^6.10.1",
