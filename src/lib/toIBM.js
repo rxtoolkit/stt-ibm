@@ -105,6 +105,7 @@ const toIBM = function toIBM({
   useSpeakerLabels = true,
   useWordConfidence = true,
   chunkSize = 512,
+  useShortenedChunks = false,
   _conduitOptions = {},
   _conduit = conduit,
   _shortenChunks = shortenChunks,
@@ -135,7 +136,9 @@ const toIBM = function toIBM({
       err$ = throwError(errors.invalidConfig());
     }
     if (err$) return err$;
-    const throttledChunk$ = fileChunk$.pipe(_shortenChunks(chunkSize));
+    const throttledChunk$ = fileChunk$.pipe(
+      useShortenedChunks ? _shortenChunks(chunkSize) : tap(),
+    );
     const websocketMessage$ = concat(
       initialMessage$,
       throttledChunk$,
@@ -160,7 +163,7 @@ const toIBM = function toIBM({
             serializer: _serializer,
             deserializer: _deserializer,
             ..._conduitOptions
-          }),
+          })
         );
       }),
       takeUntil(stop$)
