@@ -3,7 +3,7 @@ import axios from 'axios';
 import qs from 'qs';
 import {concat,from,of,throwError} from 'rxjs';
 import {mergeMap,takeUntil,tap} from 'rxjs/operators';
-import {conduit} from '@bottlenose/rxws';
+import {conduit} from '@buccaneerai/rxjs-ws';
 
 import shortenChunks from '../internals/shortenChunks.js';
 
@@ -159,7 +159,7 @@ const toIBM = function toIBM({
             url,
             serializer: _serializer,
             deserializer: _deserializer,
-            ...conduitOptions
+            ..._conduitOptions
           }),
         );
       }),
