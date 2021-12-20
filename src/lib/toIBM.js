@@ -1,8 +1,16 @@
 import get from 'lodash/get';
 import axios from 'axios';
 import qs from 'qs';
-import {concat,from,merge,of,Subject,throwError} from 'rxjs';
-import {delay,filter,mergeMap,share,take,takeUntil,tap} from 'rxjs/operators';
+import {BehaviorSubject,concat,from,merge,of,throwError} from 'rxjs';
+import {
+  delayWhen,
+  filter,
+  mergeMap,
+  share,
+  take,
+  takeUntil,
+  tap
+} from 'rxjs/operators';
 import {conduit} from '@buccaneerai/rxjs-ws';
 
 import shortenChunks from '../internals/shortenChunks.js';
@@ -136,12 +144,12 @@ const toIBM = function toIBM({
       err$ = throwError(errors.invalidConfig());
     }
     if (err$) return err$;
-    const ibmReadyToReceive$ = new Subject();
+    const ibmReadyToReceive$ = new BehaviorSubject();
     const throttledChunk$ = fileChunk$.pipe(
       useShortenedChunks ? _shortenChunks(chunkSize) : tap(),
       // delay binary messages until IBM confirms that it is ready to
       // receive the stream
-      delay(ibmReadyToReceive$)
+      delayWhen(() => ibmReadyToReceive$)
     );
     const websocketMessage$ = concat(
       initialMessage$,
