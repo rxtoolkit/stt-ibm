@@ -904,10 +904,10 @@
     lodash "^4.17.15"
     rxjs "^6.5.4"
 
-"@buccaneerai/rxjs-ws@^1.0.0":
-  version "1.0.0"
-  resolved "https://npm.pkg.github.com/download/@buccaneerai/rxjs-ws/1.0.0/70f4e7a968bd1f0ed12b8a103c0b5d170636c75bb1b53e1eaa14229183c2d671#cc215e1fe0343229d738687fd6717eeaaf45dfd1"
-  integrity sha512-yIwbpQMFXC2MGNH3iRHhY9BbWySK/Z91XeqDQRUfixiRspAj2S5SvOb1/TSHpSAsjLbK5E0ivXdhRzsk7ECIjw==
+"@buccaneerai/rxjs-ws@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.pkg.github.com/download/@buccaneerai/rxjs-ws/1.1.0/a158eeca08bfe13ee0c46765b085554d978a796732fc9f873bdc31dc801d3a97#e9a12f145a1c379878f10c7870561dffcc75ff99"
+  integrity sha512-Oi91NqVZpGFqzrzUE0cIgF0Jo44/KiW6tJyOpedFDEajoj/ubUGTxLyFCVuRfMsImVNAhIwmgZX7tOp/0Nfp4Q==
   dependencies:
     isomorphic-ws "^4.0.1"
     lodash "^4.17.20"

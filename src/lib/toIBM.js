@@ -167,7 +167,7 @@ const toIBM = function toIBM({
           acousticCustomizationId,
           baseModelVersion
         });
-        return websocketMessage$.pipe(
+        const ibmOutput$ = websocketMessage$.pipe(
           // Keep chunks reasonably small
           // stream chunks to IBM websocket server and receive responses
           _conduit({
@@ -177,16 +177,23 @@ const toIBM = function toIBM({
             ..._conduitOptions
           })
         );
-      }),
+        error$ = ibmOutput$.error$;
+        return ibmOutput$;
+      })
+    );
+    const error$ = message$.error$;
+    const messageSub$ = message$.pipe(
       takeUntil(stop$),
       share()
     );
-    const ibmReady$ = message$.pipe(
+    const ibmReady$ = messageSub$.pipe(
       take(1),
       tap(() => ibmReadyToReceive$.next(true)),
       filter(() => false)
     );
-    return merge(ibmReady$, message$);
+    let obs$ = merge(ibmReady$, messageSub$);
+    obs$.error$ = error$;
+    return obs$;
   };
 };
 

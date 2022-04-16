@@ -35,6 +35,7 @@ output$.subscribe(console.log);
 // Output:
 // {...resultFromIBMWatson}
 // {...anotherResultFromIBMWatson}
+output$.error$.subscribe(console.error); // optional: handle Websocket Errors
 ```
 
 ## Contributing, Deployments, etc.
