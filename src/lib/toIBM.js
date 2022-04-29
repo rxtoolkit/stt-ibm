@@ -168,8 +168,8 @@ const toIBM = function toIBM({
           baseModelVersion
         });
         const ibmOutput$ = websocketMessage$.pipe(
-          // Keep chunks reasonably small
-          // stream chunks to IBM websocket server and receive responses
+          // WARNING: Keep chunks reasonably small or else IBM will complain.
+          // Stream chunks to IBM websocket server and receive responses.
           _conduit({
             url,
             serializer: _serializer,
@@ -177,7 +177,6 @@ const toIBM = function toIBM({
             ..._conduitOptions
           })
         );
-        error$ = ibmOutput$.error$;
         return ibmOutput$;
       })
     );

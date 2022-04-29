@@ -1,6 +1,6 @@
 {
   "name": "@buccaneerai/stt-ibm",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the IBM Watson.",
   "main": "dist/index.js",
   "repository": "https://github.com/buccaneerai/stt-ibm.git",
