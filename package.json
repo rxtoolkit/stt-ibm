@@ -41,7 +41,7 @@
     "@bottlenose/rxfs": "^0.7.0",
     "chai": "^4.2.0",
     "commander": "^7.0.0",
-    "luxon": "^1.26.0",
+    "luxon": "^1.28.1",
     "mocha": "^8.2.1",
     "rxjs-marbles": "^6.0.1",
     "sinon": "^9.2.4"
