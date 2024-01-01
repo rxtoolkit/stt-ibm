@@ -36,11 +36,14 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/register": "^7.12.13",
     "@bottlenose/rxfs": "^0.7.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "chai": "^4.2.0",
     "commander": "^7.0.0",
     "luxon": "^1.26.0",
     "mocha": "^8.2.1",
     "rxjs-marbles": "^6.0.1",
+    "semantic-release-export-data": "^1.0.1",
     "sinon": "^9.2.4"
   },
   "engines": {
