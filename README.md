@@ -5,6 +5,8 @@
 yarn add @rxtk/stt-ibm
 ```
 
+You'll need an IBM Watson account with credentials for the STT API.
+
 ## Demo
 To run the demo pipeline:
 ```bash
@@ -17,7 +19,7 @@ yarn demo:run <myInstanceId> --secret <secretAccessKey> --write-output
 ```js
 import {from} from 'rxjs';
 import {myFunction} from '@rxtk/stt-ibm';
-import {fromFile} from '@bottlenose/rxfs';
+import {fromFile} from '@rxtk/fs';
 
 const filePath = 'path/to/audio-file.linear16';
 // For a full list of options, see ./src/lib/toIBM.js
@@ -34,9 +36,6 @@ output$.subscribe(console.log);
 // {...anotherResultFromIBMWatson}
 output$.error$.subscribe(console.error); // optional: handle Websocket Errors
 ```
-
-## Contributing, Deployments, etc.
-See [CONTRIBUTING.md](https://github.com/rxtoolkit/stt-ibm/blob/master/docs/CONTRIBUTING.md) file for information about deployments, etc.
 
 ## References
 - [IBM Speech-to-text docs](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-websockets)
