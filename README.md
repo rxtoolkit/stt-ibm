@@ -2,6 +2,10 @@
 > 👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the IBM Watson.
 
 ```bash
+npm i @rxtk/stt-ibm
+```
+
+```bash
 yarn add @rxtk/stt-ibm
 ```
 
