@@ -1,16 +1,13 @@
 {
-  "name": "@buccaneerai/stt-ibm",
+  "name": "@rxtk/stt-ibm",
   "version": "1.6.1",
   "description": "👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the IBM Watson.",
   "main": "dist/index.js",
-  "repository": "https://github.com/buccaneerai/stt-ibm.git",
+  "repository": "https://github.com/rxtoolkit/stt-ibm.git",
   "author": "Buccaneer LLC <opensource@buccaneer.ai>",
-  "license": "UNLICENSED",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buccaneerai/stt-ibm/issues"
+    "url": "https://github.com/rxtoolkit/stt-ibm/issues"
   },
   "keywords": [],
   "directories": {
@@ -25,7 +22,7 @@
     "demo:run": "node ./scripts/demo.js run"
   },
   "dependencies": {
-    "@buccaneerai/rxjs-ws": "^1.1.0",
+    "@rxtk/ws": "^1.1.1",
     "axios": "^0.21.1",
     "lodash": "^4.17.20",
     "qs": "^6.10.1",

@@ -904,16 +904,6 @@
     lodash "^4.17.15"
     rxjs "^6.5.4"
 
-"@buccaneerai/rxjs-ws@^1.1.0":
-  version "1.1.0"
-  resolved "https://npm.pkg.github.com/download/@buccaneerai/rxjs-ws/1.1.0/a158eeca08bfe13ee0c46765b085554d978a796732fc9f873bdc31dc801d3a97#e9a12f145a1c379878f10c7870561dffcc75ff99"
-  integrity sha512-Oi91NqVZpGFqzrzUE0cIgF0Jo44/KiW6tJyOpedFDEajoj/ubUGTxLyFCVuRfMsImVNAhIwmgZX7tOp/0Nfp4Q==
-  dependencies:
-    isomorphic-ws "^4.0.1"
-    lodash "^4.17.20"
-    rxjs "^6.6.3"
-    ws "^7.4.5"
-
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents":
   version "2.1.8-no-fsevents"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.tgz#da7c3996b8e6e19ebd14d82eaced2313e7769f9b"
@@ -930,6 +920,16 @@
     path-is-absolute "^1.0.0"
     readdirp "^2.2.1"
     upath "^1.1.1"
+
+"@rxtk/ws@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@rxtk/ws/-/ws-1.1.1.tgz#1d75f0953f051b3540fbdcdc29148baa2167f672"
+  integrity sha512-0SOLh5MUkZKlfDwFpTb0TsgjXdOsGZlRJfcYPhr6JLNgD9xnS9GtDFgFHCgHNmUvtTJapv+42TKoa4+gPQCwKA==
+  dependencies:
+    isomorphic-ws "^4.0.1"
+    lodash "^4.17.20"
+    rxjs "^6.6.3"
+    ws "^7.4.5"
 
 "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.1":
   version "1.8.2"
@@ -3014,9 +3014,9 @@ wrappy@1:
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
 ws@^7.4.5:
-  version "7.4.5"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.5.tgz#a484dd851e9beb6fdb420027e3885e8ce48986c1"
-  integrity sha512-xzyu3hFvomRfXKH8vOFMU3OguG6oOvhXMo3xsGy3xWExqaM2dxBbVxuD99O7m3ZUFMvvscsZDqxfgMaRr/Nr1g==
+  version "7.5.9"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
+  integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
 y18n@^4.0.0:
   version "4.0.1"

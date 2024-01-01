@@ -11,7 +11,7 @@ import {
   takeUntil,
   tap
 } from 'rxjs/operators';
-import {conduit} from '@buccaneerai/rxjs-ws';
+import {conduit} from '@rxtk/ws';
 
 import shortenChunks from '../internals/shortenChunks.js';
 
