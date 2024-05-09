@@ -33,7 +33,7 @@ const params = {
   region: 'us-east',
 };
 const audioChunk$ = fromFile(filePath);
-const output$ = string$.pipe(toIBM(params));
+const output$ = audioChunk$.pipe(toIBM(params));
 output$.subscribe(console.log); 
 // Output:
 // {...resultFromIBMWatson}
